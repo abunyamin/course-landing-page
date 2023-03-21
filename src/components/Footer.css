@@ -1,0 +1,159 @@
+/* Footer CSS */
+
+.footer {
+  background-color: black;
+  display: flex;
+  gap: 90px;
+  padding: 123px 6.94% 50px;
+}
+
+.footer__text {
+  width: 30%;
+  color: #ffffff;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  width: 100%;
+}
+
+.list__main {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list__main li {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans";
+}
+
+.footer__text .title {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  margin-bottom: 30px;
+}
+
+.footer__text .subtitle {
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.social__list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.social__icon {
+  width: 24px;
+  height: auto;
+  color: var(--accent-2);
+  cursor: pointer;
+}
+
+.bottom {
+  background-color: black;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #ffffff;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.bottom__form {
+  width: 100%;
+  display: flex;
+  padding: 0 6.94%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom__input {
+  background-color: #ffffff;
+  width: 50%;
+  height: 52px;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--accent-2);
+  border: none;
+}
+
+.bottom__submit {
+  background-color: var(--accent-2);
+  padding: 14px 28px;
+  height: 52px;
+  width: fit-content;
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottom__submit:hover {
+  background-color: #045c29;
+}
+
+.bottom__input:focus {
+  outline: 2px solid var(--accent-2);
+}
+
+.bottom__input::placeholder {
+  color: var(--accent-2);
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 80px 6.94% 36px;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  footer.section-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    order: 2;
+    padding-top: 0;
+    flex-direction: column;
+    padding: 16.4% 6.94% 13%;
+  }
+
+  .footer__text {
+    width: 100%;
+    order: 2;
+  }
+
+  .footer__list {
+    width: 100%;
+    order: 1;
+  }
+
+  .bottom {
+    order: 1;
+  }
+}

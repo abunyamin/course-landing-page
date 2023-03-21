@@ -1,0 +1,201 @@
+/*  Education CSS */
+
+.section-education {
+  margin-bottom: 98px;
+}
+
+.section-education__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.section-education__head h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--accent);
+}
+
+.section-education__body {
+  display: flex;
+  gap: 32px;
+}
+
+.section-education__body .row-1 {
+  width: 40%;
+}
+
+.section-education__body .row-1 .left__image {
+  position: relative;
+  max-width: 100%;
+  min-width: 300px;
+}
+
+.section-education__body .row-1 .left__image img {
+  width: 90%;
+  height: auto;
+  border-radius: 28px 28px 72px 28px;
+}
+
+.section-education__body .row-1 .job {
+  padding: 12px 9px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  border-radius: 7px 7px 17px 7px;
+  box-shadow: 0 0 76px 0 #70707040;
+  width: fit-content;
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.section-education__body .row-1 .left__image .job .job__icon--bg {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-education__body .row-1 .left__image .job .job__icon--item {
+  color: var(--accent-2);
+  width: 28px;
+  height: 28px;
+}
+
+.job__text--1 {
+  color: var(--accent-2);
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.job_text--2 {
+  color: var(--accent);
+  text-align: center;
+  font-weight: 600;
+}
+
+.section-education__body .row-2 {
+  width: 60%;
+}
+
+h3.section-education__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+ul.section-education__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+ul.section-education__list li {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+ul.section-education__list li .education__bg {
+  background-color: var(--primary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.section-education__list li .education__bg .education__icon {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--accent-2);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 789px) {
+  .section-education__body {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .section-education__body .row-1, .section-education__body .row-2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 677px) {
+
+  .section-education {
+    margin-bottom: 64px;
+  }
+  
+  .section-education__head {
+    margin-bottom: 48px;
+  }
+
+  .section-education__head h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
+  h3.section-education__title{
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+
+  
+ul.section-education__list {
+  row-gap: 19px;
+}
+
+
+ul.section-education__list li {
+  column-gap: 14px;
+}
+
+ul.section-education__list li .education__bg {
+  background-color: var(--primary);
+  width: 30px;
+  height: 30px;
+}
+
+ul.section-education__list li .education__bg .education__icon {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+.section-education__body .row-1 .job {
+  transform: scale(0.9);
+  right: -10px;
+}
+
+
+.section-education__body .row-1 .left__image .job .job__icon--bg {
+  width: 30px;
+  height: 30px;
+}
+
+
+.section-education__body .row-1 .left__image .job .job__icon--item {
+  width: 14.5px;
+  height: auto;
+}
+
+
+}

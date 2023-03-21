@@ -1,0 +1,172 @@
+/* Category CSS */
+
+.category {
+  margin-bottom: 98px;
+}
+
+.category__head {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 64px;
+}
+
+.category__head h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--accent);
+  width: 70%;
+}
+
+.category__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category__head .see-all {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+
+.category__head .see-all a {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.category__buttons {
+  position: absolute;
+  width: calc(100% - 24px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+}
+
+.category__buttons .btn__left,
+.category__buttons .btn__right {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  border: 1px solid var(--accent-2);
+  cursor: pointer;
+}
+
+.category__buttons .btn__left:hover,
+.category__buttons .btn__right:hover {
+  background-color: var(--accent-2);
+}
+
+.btn__left .category__button,
+.btn__right .category__button {
+  color: var(--accent-2);
+  width: 32px;
+  height: auto;
+  cursor: pointer;
+}
+.btn__left:hover .category__button,
+.btn__right:hover .category__button {
+  color: #ffffff;
+}
+
+.category__image {
+  position: relative;
+  max-width: fit-content;
+  height: auto;
+  cursor: pointer;
+  padding: 6%;
+}
+
+.category__image img {
+  width: 100%;
+  filter: brightness(50%);
+  transition: all 0.3s;
+}
+
+.category__image:hover img {
+  width: 100%;
+  filter: brightness(100%);
+}
+
+.category__image span {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 48px;
+  color: #ffffff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .category__head h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .category__head .see-all a {
+    font-size: 16px;
+    list-style: 24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .category__image span {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  .category__head h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .category__head .see-all a {
+    font-size: 14px;
+    list-style: 21px;
+  }
+
+  .category__image {
+    width: 116px;
+    height: 133px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 99;
+  }
+
+  .category__image img {
+border-radius: 8px;
+  }
+
+  .category__image span {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    left: 50%;
+    bottom: 50%;
+    text-align: center;
+    transform: translate(-50%, 50%);
+  }
+
+  .category__buttons {
+    display: none;
+  }
+}

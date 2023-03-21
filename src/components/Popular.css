@@ -1,0 +1,353 @@
+/* Category CSS */
+
+.popular {
+  margin-bottom: 98px;
+}
+
+.popular__head {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.popular__head h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--accent);
+}
+
+.popular .sort {
+  background-color: var(--accent-2);
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.popular .sort .sort__icon {
+  width: 21px;
+  height: auto;
+  color: #ffffff;
+}
+
+.popular .sort span {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.sort__list {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid var(--accent-2);
+  list-style: none;
+  border-radius: 8px;
+  bottom: -200px;
+  right: 0;
+  width: 160px; 
+  overflow: hidden;
+}
+
+.sort__list li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #a5a5a56f;
+  cursor: pointer;
+}
+.sort__list li:last-child {
+  border-bottom: none;
+}
+
+.sort__list li:hover {
+  background-color: var(--primary);
+}
+
+.sort__list li.active {
+  background-color: var(--secondary);
+}
+
+.popular__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 #cbcbcb40;
+  border-radius: 10px;
+  align-self: stretch;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+transform: scale(1.1);
+box-shadow: 0 0 20px 0 #cbcbcb89;
+}
+
+.card__head {
+width: 100%;
+}
+
+.card__head img {
+  max-width: 100%;
+  min-width: 180px;
+}
+
+
+.card__body {
+  padding: 24px 24px 28px;
+}
+
+.card__body--top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.card--title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 36px;
+  color: var(--accent);
+  width: 80%;
+}
+
+.star__icon {
+  width: 18px;
+  height: auto;
+  color: var(--accent-2);
+}
+
+.card__rate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  justify-self: end;
+  gap: 4px;
+}
+
+.card__rate span {
+  line-height: 24px;
+}
+
+.card__body--bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+
+.card__left .student {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.person__icon {
+  width: 16px;
+  height: auto;
+  color: var(--accent-2);
+}
+
+.card__left span {
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.card__price {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .popular__head h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .card__body--top {
+    margin-bottom: 16px;
+  }
+
+  .card--title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .card__body--bottom {
+    flex-direction: column;
+  }
+
+  .card__left {
+    order: 2;
+  }
+
+  .card__price {
+    order: 1;
+  }
+
+  
+  .card__rate span {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+
+  .card__left span.time {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .card__left span .person__icon {
+    width: 10px;
+    height: auto;
+  }
+
+  .card__left span.student span {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .card__left span span {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .card__price {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  .popular__head h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  button.sort {
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .popular .sort span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .sort__list {
+    width: 120px;
+    bottom: -150px;
+  }
+  
+  .sort__list li {
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+
+  /* Card Component */
+
+  .popular__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+.card {
+    /* max-width: 165px;
+    min-width: 140px; */
+    border-radius: 5px;
+  }
+
+.card__body {
+    width: 100%;
+    padding: 2px 13px 9px;
+  }
+
+  .card__body--top {
+    margin-bottom: 8px;
+  }
+
+  .card--title {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--accent);
+  }
+
+  .star__icon {
+    width: 6.5px;
+    margin-right: 4px;
+  }
+
+  .card__body--bottom {
+    flex-wrap: wrap;
+  }
+
+  .card__rate span {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+
+  .card__left span.time {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .card__left span .person__icon {
+    width: 8px;
+    height: auto;
+  }
+
+  .card__left span.student span {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .card__left span span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .card__price {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  
+.popular .sort {
+  font-size: 12px;
+  line-height: 16px;
+}
+}
+
+@media screen and (max-width: 320px) {
+  
+.popular .sort {
+  padding: 4px 8px;
+  font-size: 8px;
+  line-height: 12px;
+  min-width: fit-content;
+}
+
+
+}

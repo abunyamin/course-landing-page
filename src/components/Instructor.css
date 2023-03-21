@@ -1,0 +1,130 @@
+/* Instructor CSS */
+
+.instructor {
+  margin-bottom: 98px;
+}
+
+.instructor__head {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  margin-bottom: 64px;
+}
+
+.instructor__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.instructor__card {
+  width: fit-content;
+  background-color: #ffffff;
+  padding: 30px 40px 18px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px 0 #cbcbcb40;
+  text-align: center;
+  flex: 1;
+}
+
+.instructor__card img {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.instructor__name {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 300;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.instructor__position {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--accent-2);
+  margin-bottom: 36px;
+}
+
+.instructor__text {
+  line-height: 26px;
+  text-align: center;
+  color: var(--accent);
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .instructor__card {
+    padding: 24px 30px 12px;
+  }
+
+  .instructor__position {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .instructor__head {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  
+  .instructor__card {
+    flex: 1 200px 300px;
+  }
+
+  .instructor__card img {
+    margin-bottom: 12px;
+    height: 80px;
+    width: 80px;
+  }
+
+  
+}
+
+@media screen and (max-width: 677px) {
+
+  .instructor__head {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .instructor__card {
+    flex: 1 150px 160px;
+    padding: 14px 21px 9px;
+  }
+
+  .instructor__card img {
+    width: 53px;
+    height: 53px;
+    margin-bottom: 7px;
+  }
+
+  .instructor__name {
+  font-size: 9.3px;
+  line-height: 12.7px;
+  }
+
+  .instructor__position {
+  font-size: 8px;
+  line-height: 10px;
+  }
+
+  .instructor__text {
+  font-size: 7.8px;
+  line-height: 12.1px;
+  width: 140px;
+  }
+}

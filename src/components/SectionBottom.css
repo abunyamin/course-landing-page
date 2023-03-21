@@ -1,0 +1,135 @@
+/* Bottom CSS */
+
+.section-bottom {
+  display: flex;
+  gap: 100px;
+  padding: 41px 8% 72px 6.9%;
+}
+
+.section-bottom .row-1 {
+  width: 35%;
+}
+
+.section-bottom .row-1 img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 0px;
+  top: -57px;
+  border-radius: 20px;
+}
+
+.section-bottom .row-2 {
+  width: 50%;
+}
+
+.section-bottom .row-2 .title {
+  font-family: 'Open Sans';
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 57px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.section-bottom .row-2 .sub-title {
+  display: block;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 89px;
+}
+
+.section-bottom .row-2 .button__bottom {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.section-bottom .row-2 .button__bottom .btn__left {
+  width: fit-content;
+  background-color: var(--accent-2);
+  padding: 20px 42px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.section-bottom .row-2 .button__bottom .btn__left:hover {
+  background-color: #045c29;
+}
+
+.section-bottom .row-2 .button__bottom .btn__right {
+  width: fit-content;
+  background-color: #FFFFFF;
+  padding: 20px 42px;
+  font-weight: 600;
+  color: var(--accent-2);
+  border: 1px solid var(--accent-2);
+  line-height: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.section-bottom .row-2 .button__bottom .btn__right:hover {
+  background-color: #045c29;
+  border: none;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 800px) {
+  .section-bottom .row-1 {
+display: none;
+  }
+
+  .section-bottom .row-2 {
+    width: 100%;
+  }
+
+  .section-bottom .row-2 .title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .section-bottom .row-2 .sub-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 677px) {
+
+  .section-bottom {
+    padding: 16% 9%;
+  }
+  .section-bottom .row-2 {
+    text-align: center;
+  }
+
+  .section-bottom .row-2 .title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .section-bottom .row-2 .sub-title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 64px;
+  }
+
+  .section-bottom .row-2 .button__bottom {
+justify-content: space-between;
+  }
+
+  .section-bottom .row-2 .button__bottom .btn__left,   .section-bottom .row-2 .button__bottom .btn__right {
+font-size: 16px;
+line-height: 20px;
+padding: 20px 24px;
+width: fit-content;
+  }
+
+}

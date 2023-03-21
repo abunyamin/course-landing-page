@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+:root {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  --primary: #E4FFFF;
+  --secondary: #E1FFEE;
+  --accent: #333333;
+  --accent-2: #09B451;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+.container {
+  margin-right: 6.94%;
+  margin-left: 6.94%;
+}

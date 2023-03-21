@@ -1,0 +1,101 @@
+/* Skill CSS */
+
+.skill {
+  margin-bottom: 98px;
+}
+
+.skill__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.skill__head h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--accent);
+}
+
+.skill__list {
+  position: relative;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* Button */
+
+.skill__buttons {
+  position: absolute;
+  width: calc(100% - 24px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+}
+
+.skill__buttons .btn__left,
+.skill__buttons .btn__right {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  border: 1px solid var(--accent-2);
+  cursor: pointer;
+}
+
+.skill__buttons .btn__left:hover,
+.skill__buttons .btn__right:hover {
+  background-color: var(--accent-2);
+}
+
+.btn__left .skill__button,
+.btn__right .skill__button {
+  color: var(--accent-2);
+  width: 32px;
+  height: auto;
+  cursor: pointer;
+}
+.btn__left:hover .skill__button,
+.btn__right:hover .skill__button {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+
+  .skill__head {
+    margin-bottom: 48px;
+  }
+
+  .skill__head h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 677px) {
+
+  .skill__buttons {
+    display: none;
+  }
+
+  .skill__head {
+    margin-bottom: 36px;
+  }
+
+  .skill__head h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+  
+}
