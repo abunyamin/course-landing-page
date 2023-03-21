@@ -21,20 +21,19 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
-  width: 30%;  
+  width: 30%;
 }
 
 .review__nav--text {
   font-size: 48px;
   line-height: 65px;
   font-weight: 700;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 
 .review__nav--text span {
   color: var(--accent-2);
 }
-
 
 /* Button */
 
@@ -86,7 +85,7 @@
   width: fit-content;
   padding: 48px;
   background-color: #ffffff;
-  box-shadow: 0 0 20px 0 #E2E2E240;
+  box-shadow: 0 0 20px 0 #e2e2e240;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -111,16 +110,15 @@
   gap: 6px;
 }
 
-
 .review__card--head .text span:nth-child(1) {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 20px;
   line-height: 27px;
   font-weight: 700;
 }
 
 .review__card--head .text span:nth-child(2) {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 25px;
   font-weight: 600;
@@ -136,8 +134,34 @@
   overflow-y: auto;
 }
 
-@media screen and (max-width: 800px) {
+.review__card--body::-webkit-scrollbar {
+  width: 2px;
+}
 
+.review__card--body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.review__card--body::-webkit-scrollbar-thumb {
+  background-color: #8888888b;
+  border-radius: 5px;
+}
+
+/* Style scrollbar di browser Mozilla */
+.scrollbar::-moz-scrollbar {
+  width: 2px;
+}
+
+.scrollbar::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.scrollbar::-moz-scrollbar-thumb {
+  background-color: #8888888b;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
   .review {
     margin-bottom: 48px;
   }
@@ -147,7 +171,7 @@
     line-height: 24px;
     margin-bottom: 24px;
   }
-  
+
   .review__body {
     flex-direction: column;
     gap: 24px;
@@ -165,58 +189,56 @@
   }
 
   .review__nav--button .btn__left,
-.review__nav--button .btn__right {
-  width: 35px;
-  height: 35px;
+  .review__nav--button .btn__right {
+    width: 35px;
+    height: 35px;
+  }
+
+  .review__nav--button {
+    gap: 28px;
+  }
+
+  .btn__left .review__button,
+  .btn__right .review__button {
+    width: 24px;
+    height: auto;
+  }
+
+  .review__list {
+    width: 100%;
+  }
 }
 
-.review__nav--button {
-gap: 28px;
-}
+@media screen and (max-width: 677px) {
+  .review__card {
+    padding: 16px 14px 11px;
+    row-gap: 12px;
+    height: 165px;
+  }
 
-.btn__left .review__button,
-.btn__right .review__button {
-  width: 24px;
-  height: auto;
-}
+  .review__card--head {
+    gap: 12px;
+  }
 
-.review__list {
-  width: 100%;
-}
-}
+  .review__card--head img {
+    width: 28px;
+    height: 28px;
+  }
 
+  .review__card--head .text span:nth-child(1) {
+    font-size: 12px;
+    line-height: 16.3px;
+    font-weight: 600;
+  }
+  .review__card--head .text span:nth-child(2) {
+    font-size: 12px;
+    line-height: 16.3px;
+    font-weight: 400;
+  }
 
-@media screen and (max-width: 677px){
-.review__card {
-  padding: 16px 14px 11px;
-  row-gap: 12px;
-  height: 165px;
+  .review__card--body {
+    font-family: "Open Sans";
+    font-size: 12px;
+    line-height: 16.3px;
+  }
 }
-
-.review__card--head {
-  gap: 12px;
-}
-
-.review__card--head img {
-  width: 28px;
-  height: 28px;
-}
-
-.review__card--head .text span:nth-child(1) {
-  font-size: 12px;
-  line-height: 16.3px;
-  font-weight: 600;
-}
-.review__card--head .text span:nth-child(2) {
-  font-size: 12px;
-  line-height: 16.3px;
-  font-weight: 400;
-}
-
-.review__card--body {
-  font-family: 'Open Sans';
-  font-size: 12px;
-  line-height: 16.3px;
-}
-}
-

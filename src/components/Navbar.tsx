@@ -17,7 +17,9 @@ useEffect(()=> {
     navRef.current?.classList.toggle("fixed", window.scrollY > 200);
   });
 
-  return 
+  return () => window.removeEventListener("scroll", function() {
+    navRef.current?.classList.toggle("fixed", window.scrollY > 200);
+  });
 })
 
   return (

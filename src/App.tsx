@@ -10,7 +10,7 @@ import Instructor from "./components/Instructor";
 import SectionBottom from "./components/SectionBottom";
 import Footer from "./components/Footer";
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import 'aos/dist/aos.css';
 
 function App() {
 
